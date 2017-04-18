@@ -2,8 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    
     <!-- Version from https://dotnet.myget.org/feed/dotnet-core/package/nuget/NETStandard.Library -->
     <NETStandardImplicitPackageVersion>2.0.0-preview1-25218-01</NETStandardImplicitPackageVersion>
+    
   </PropertyGroup>
   
 </Project>

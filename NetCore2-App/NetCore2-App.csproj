@@ -2,11 +2,16 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    
+    <!-- Visual Studio requires an explicit runtime Framework version -->
+    <!-- This version can be found from https://dotnet.myget.org/feed/dotnet-core/package/nuget/Microsoft.NetCore.App -->
     <RuntimeFrameworkVersion>2.0.0-preview1-002028-00</RuntimeFrameworkVersion>
+    
     <!-- Allows the project to use NetFX packages.
          Note that this will only work if those packages don't use
          NetFx APIs which aren't available to NetCore 2.0. -->
     <PackageTargetFallback>$(PackageTargetFallback);netstandard2.0;net45</PackageTargetFallback>
+    
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetStandard2-Libray\NetStandard2-Libray.csproj" />
