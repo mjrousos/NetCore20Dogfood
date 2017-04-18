@@ -15,6 +15,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetStandard2-Libray\NetStandard2-Libray.csproj" />
+    <ProjectReference Include="..\NetFramework4-Library\NetFramework4-Library.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="RestSharp" Version="105.2.3" />
