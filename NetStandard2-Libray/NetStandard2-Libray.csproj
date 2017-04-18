@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- Note the target framework is now netstandard2.0 -->
     <TargetFramework>netstandard2.0</TargetFramework>
     
     <!-- Version from https://dotnet.myget.org/feed/dotnet-core/package/nuget/NETStandard.Library -->
+    <!-- This explicit version refernce is not needed by the CLI, but is temporarily needed by VS -->
     <NETStandardImplicitPackageVersion>2.0.0-preview1-25218-01</NETStandardImplicitPackageVersion>
     
   </PropertyGroup>

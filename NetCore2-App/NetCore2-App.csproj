@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    
+    <!-- Note that target framework is now 2.0 -->
     <TargetFramework>netcoreapp2.0</TargetFramework>
     
     <!-- Visual Studio requires an explicit runtime Framework version -->
@@ -13,11 +15,16 @@
     <PackageTargetFallback>$(PackageTargetFallback);net45</PackageTargetFallback>
     
   </PropertyGroup>
+  
   <ItemGroup>
+    <!-- Project references can be made to .NET Core, .NET Standard, or .NET Framework projects -->
     <ProjectReference Include="..\NetStandard2-Libray\NetStandard2-Libray.csproj" />
     <ProjectReference Include="..\NetFramework4-Library\NetFramework4-Library.csproj" />
   </ItemGroup>
+  
   <ItemGroup>
+    <!-- Package references can also be made to packages that support NetStandard, NetCore, or NetFX -->
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
     <PackageReference Include="RestSharp" Version="105.2.3" />
   </ItemGroup>
 </Project>
