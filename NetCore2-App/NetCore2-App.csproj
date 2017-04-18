@@ -10,7 +10,7 @@
     <!-- Allows the project to use NetFX packages.
          Note that this will only work if those packages don't use
          NetFx APIs which aren't available to NetCore 2.0. -->
-    <PackageTargetFallback>$(PackageTargetFallback);netstandard2.0;net45</PackageTargetFallback>
+    <PackageTargetFallback>$(PackageTargetFallback);net45</PackageTargetFallback>
     
   </PropertyGroup>
   <ItemGroup>
